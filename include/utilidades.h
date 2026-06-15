@@ -3,8 +3,8 @@
 
 #include "AnimaticFlow.h"
 
-// Manejo estricto de la interfaz de usuario en la terminal
 void limpiarPantallaNativa();
 void detenerFlujo();
+void exportarReporteEstructuradoPDF(const vector<Escena>& lista); // <-- AÑADE ESTA LÍNEA
 
 #endif
