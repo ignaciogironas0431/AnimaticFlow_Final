@@ -10,7 +10,7 @@ void modificarEstadoEscena(vector<Escena>& lista);
 void eliminarEscenaFisica(vector<Escena>& lista);
 
 // Métricas solicitadas y sugeridas para el Grupo 1
-void ejecutarModuloComparativo(vector<Escena> lista);
+void ejecutarModuloComparativo(vector<Escena>& lista);
 void ordenarBubbleSortConMetricas(vector<Escena>& lista, int& comparaciones, int& intercambios);
 
 // Funciones de búsqueda exigidas por la rúbrica (Iterativa y Recursiva)
