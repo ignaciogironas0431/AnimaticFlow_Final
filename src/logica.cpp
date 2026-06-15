@@ -57,12 +57,13 @@ void ordenarBubbleSortConMetricas(vector<Escena>& lista, int& comparaciones, int
     }
 }
 
-// Sugerencia del Grupo 1 para el Examen: Módulo comparativo métrico
-void ejecutarModuloComparativo(vector<Escena> lista) {
+void ejecutarModuloComparativo(vector<Escena>& lista) {
     int compBubble, interBubble;
     size_t numRegistros = lista.size();
     
     cout << "\n--- EJECUTANDO REPORTE COMPARATIVO DE ORDENACION (SUGERENCIA GRUPO 1) ---\n";
+    
+    // Aquí se ordena el vector original físicamente en la memoria RAM
     ordenarBubbleSortConMetricas(lista, compBubble, interBubble);
 
     cout << "\n======================================================\n";
@@ -75,6 +76,7 @@ void ejecutarModuloComparativo(vector<Escena> lista) {
     cout << " Bubble Sort Opt.     " << setw(18) << compBubble << setw(17) << interBubble << "\n";
     cout << " Intercalacion (Merge)" << setw(18) << numRegistros << setw(17) << "Lineal O(N)" << "\n";
     cout << "======================================================\n";
+    cout << ">> Pipeline ordenado exitosamente por ID de tarea.\n";
 }
 
 bool verificarSiEstaOrdenado(const vector<Escena> &lista) {
