@@ -18,11 +18,11 @@ int main() {
         cout << "===================================================\n";
         cout << "    ANIMATICFLOW V2.0: EXAMEN INTEGRADOR FINAL     \n";
         cout << "===================================================\n";
-        cout << " 1. Registrar plano cinematografico (ALTA)\n";
-        cout << " 2. Visualizar tablero de produccion (CONSULTA)\n";
-        cout << " 3. Modificar progreso de tarea (CAMBIO / UPDATE)\n";
-        cout << " 4. Eliminar escena del pipeline (BAJA FISICA)\n";
-        cout << " 5. Reporte comparativo de ordenacion (SUGERENCIA)\n";
+        cout << " 1. Registrar plano cinematografico \n";
+        cout << " 2. Visualizar tablero de produccion \n";
+        cout << " 3. Modificar progreso de tarea \n";
+        cout << " 4. Eliminar escena del pipeline \n";
+        cout << " 5. Reporte comparativo de ordenacion \n";
         cout << " 6. Sincronizar persistencia binaria y Salir\n";
         cout << "===================================================\n";
         cout << "Seleccione una opcion: ";
