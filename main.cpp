@@ -4,11 +4,9 @@
 #include "include/utilidades.h"
 
 int main() {
-    // El archivo binario operativo se aloja obligatoriamente en la carpeta data
     const string archivoDatos = "data/pipeline.dat";
     vector<Escena> memoriaTrabajo;
 
-    // Seeding obligatorio y carga automatizada de datos iniciales
     verificarOInicializarArchivo(archivoDatos);
     cargarArchivoEnVector(memoriaTrabajo, archivoDatos);
 
@@ -23,7 +21,8 @@ int main() {
         cout << " 3. Modificar progreso de tarea \n";
         cout << " 4. Eliminar escena del pipeline \n";
         cout << " 5. Reporte comparativo de ordenacion \n";
-        cout << " 6. Sincronizar persistencia binaria y Salir\n";
+        cout << " 6. Exportar reporte estructurado \n";
+        cout << " 7. Sincronizar persistencia binaria y Salir\n";
         cout << "===================================================\n";
         cout << "Seleccione una opcion: ";
         cin >> seleccion;
@@ -34,13 +33,14 @@ int main() {
             case 3: modificarEstadoEscena(memoriaTrabajo); detenerFlujo(); break;
             case 4: eliminarEscenaFisica(memoriaTrabajo); detenerFlujo(); break;
             case 5: ejecutarModuloComparativo(memoriaTrabajo); detenerFlujo(); break;
-            case 6: 
+            case 6: exportarReporteEstructuradoPDF(memoriaTrabajo); detenerFlujo(); break; // <-- NUEVA
+            case 7: 
                 guardarVectorEnArchivo(memoriaTrabajo, archivoDatos);
                 cout << "\n>> Archivo binario guardado. Pipeline cerrado correctamente.\n";
                 break;
             default: cout << "Opcion incorrecta.\n"; detenerFlujo(); break;
         }
-    } while (seleccion != 6);
+    } while (seleccion != 7);
 
     return 0;
 }
