@@ -61,8 +61,6 @@ void ejecutarModuloComparativo(vector<Escena>& lista) {
     int compBubble, interBubble;
     size_t numRegistros = lista.size();
     
-    cout << "\n--- EJECUTANDO REPORTE COMPARATIVO DE ORDENACION (SUGERENCIA GRUPO 1) ---\n";
-    
     // Aquí se ordena el vector original físicamente en la memoria RAM
     ordenarBubbleSortConMetricas(lista, compBubble, interBubble);
 
@@ -118,7 +116,7 @@ void modificarEstadoEscena(vector<Escena>& lista) {
     cout << "\nIngrese el ID de la tarea a buscar en el pipeline: "; cin >> idBuscado;
 
     int opcionBusqueda, posicion = -1, metricas = 0;
-    cout << "Seleccione el tipo de Algoritmo:\n1. Binaria Iterativa\n2. Binaria Recursiva (Sugerencia de Examen)\nOpcion: ";
+    cout << "Seleccione el tipo de Algoritmo:\n1. Binaria Iterativa\n2. Binaria Recursiva \nOpcion: ";
     cin >> opcionBusqueda;
 
     if (!verificarSiEstaOrdenado(lista)) {
