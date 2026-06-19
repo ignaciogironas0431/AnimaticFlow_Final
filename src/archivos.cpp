@@ -2,7 +2,7 @@
 #include <fstream>
 #include <cstring>
 
-// Requisito: Sembrado automático de 10 registros si el archivo está vacío
+// Sembrado automático de 10 registros si el archivo está vacío
 void verificarOInicializarArchivo(const string& rutaArchivo) {
     ifstream comprobar(rutaArchivo.c_str(), ios::binary | ios::ate);
     
