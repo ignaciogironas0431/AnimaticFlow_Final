@@ -32,7 +32,7 @@ g++ main.cpp src/archivos.cpp src/logica.cpp src/utilidades.cpp -o AnimaticFlow
 ```
 ### Comando de Ejecución:
 ```bash
-./AnimaticFlow
+AnimaticFlow
 ```
 ---
 ## 3. Guía de Uso Rápido del Programa
