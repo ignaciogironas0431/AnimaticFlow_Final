@@ -96,7 +96,7 @@ void ejecutarModuloComparativo(vector<Escena>& lista) {
     cout << " Intercalacion (Merge)" << setw(18) << compIntercalacion << setw(17) << interIntercalacion << "\n";
     cout << "======================================================\n";
     
-    // 4. VEREDICTO DE EFICIENCIA (Lo que exige la rúbrica)
+    // 4. VEREDICTO DE EFICIENCIA 
     cout << " VEREDICTO DE EFICIENCIA:\n";
     if (compBubble < compIntercalacion) {
         cout << " >> Para este conjunto de datos (" << numRegistros << " elementos), el metodo\n";
@@ -129,7 +129,7 @@ int buscarBinariaIterativa(const vector<Escena>& lista, const string& idBuscado,
     return -1;
 }
 
-// Búsqueda recursiva por ID en pipeline exigida por la docente en la imagen
+// Búsqueda recursiva por ID en pipeline 
 int buscarBinariaRecursiva(const vector<Escena>& lista, int izquierda, int derecha, const string& idBuscado, int& llamadas) {
     llamadas++;
     if (izquierda > derecha) return -1;
