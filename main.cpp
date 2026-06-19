@@ -33,7 +33,7 @@ int main() {
             case 3: modificarEstadoEscena(memoriaTrabajo); detenerFlujo(); break;
             case 4: eliminarEscenaFisica(memoriaTrabajo); detenerFlujo(); break;
             case 5: ejecutarModuloComparativo(memoriaTrabajo); detenerFlujo(); break;
-            case 6: exportarReporteEstructuradoPDF(memoriaTrabajo); detenerFlujo(); break; // <-- NUEVA
+            case 6: exportarReporteEstructuradoPDF(memoriaTrabajo); detenerFlujo(); break; 
             case 7: 
                 guardarVectorEnArchivo(memoriaTrabajo, archivoDatos);
                 cout << "\n>> Archivo binario guardado. Pipeline cerrado correctamente.\n";
