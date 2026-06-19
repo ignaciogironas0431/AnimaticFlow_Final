@@ -13,7 +13,7 @@ void detenerFlujo() {
     cin.get();
 }
 
-// NUEVA FUNCIÓN: Genera el reporte exportable estructurado requerido por la rúbrica
+// Genera el reporte exportable estructurado 
 void exportarReporteEstructuradoPDF(const vector<Escena>& lista) {
     // Definimos la ruta de salida en la carpeta de datos
     string rutaReporte = "data/reporte_pipeline_pdf.txt";
@@ -24,7 +24,7 @@ void exportarReporteEstructuradoPDF(const vector<Escena>& lista) {
         return;
     }
 
-    // Diseñamos una cabecera estructurada y formal para la entrega
+    // cabecera estructurada y formal para la entrega
     reporte << "=========================================================================================\n";
     reporte << "             UNIVERSIDAD CATOLICA BOLIVIANA \"SAN PABLO\" - LA PAZ                         \n";
     reporte << "         FACULTAD DE INGENIERIA - REPORTE EXPORTABLE DE PIPELINE (SIS-112)               \n";
@@ -36,7 +36,7 @@ void exportarReporteEstructuradoPDF(const vector<Escena>& lista) {
     reporte << left << setw(12) << "ID TAREA" << setw(30) << "NOMBRE DEL PLANO" << setw(18) << "TECNICA" << setw(15) << "FOTOGRAMAS" << setw(15) << "ESTADO" << "\n";
     reporte << "-----------------------------------------------------------------------------------------\n";
     
-    // Volcamos estructuradamente los datos procesados por el sistema
+    // Volcamos  los datos procesados por el sistema
     for (size_t i = 0; i < lista.size(); i++) {
         reporte << left << setw(12) << lista[i].id 
                 << setw(30) << lista[i].nombrePlano 
